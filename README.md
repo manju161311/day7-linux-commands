@@ -1,8 +1,7 @@
 # day7-linux-commands
+**day 7**
 
-2025-11-17T09:57:21.879483+00:00 Manju systemd[1]: Starting wsl-pro.service - Bridge to Ubuntu Pro agent on Windows...
-2025-11-17T09:57:21.933771+00:00 Manju wsl-pro-service[7879]: #033[36mINFO#033[0m Starting WSL Pro Service version 0.1.18-1-g3c35f427-dirty
-2025-11-17T09:57:22.065514+00:00 Manju systemd[1]: Started wsl-pro.service - Bridge to Ubuntu Pro agent on Windows.
+
 2025-11-17T09:57:22.590316+00:00 Manju wsl-pro-service[7879]: #033[33mWARNING#033[0m Daemon: could not connect to Windows Agent: could not get address: could not read agent port file "/mnt/c/Users/manju/.ubuntupro/.address": open /mnt/c/Users/manju/.ubuntupro/.address: no such file or directory
 2025-11-17T09:57:29.609083+00:00 Manju wsl-pro-service[7879]: message repeated 3 times: [ #033[33mWARNING#033[0m Daemon: could not connect to Windows Agent: could not get address: could not read agent port file "/mnt/c/Users/manju/.ubuntupro/.address": open /mnt/c/Users/manju/.ubuntupro/.address: no such file or directory]
 
@@ -32,9 +31,22 @@ mod to 750
 2025-11-17T10:12:46.800544+00:00 Manju kernel: WSL (237) ERROR: CheckConnection: getaddrinfo() failed: -5
 2025-11-17T10:12:46.800621+00:00 Manju kernel: systemd-journald[4998]: Time jumped backwards, rotating.
 
+**Issues**
+Missing Parent Directory Error:  Running   without the   option when trying to create a nested structure like   if   or   don't exist
 
-Day 9
-Pipelines and Text Processing, and Filters Commands
+Permission Denied for  / :  The user forgets to use   when attempting to change ownership or group to a system user/group
+
+**Day 8**
+**Linux System Administration Users, Groups & System Security**
+
+ Incorrectly placing NOPASSWD: could lead to either a user being prompted for a password when they shouldn't be, or worse, being granted passwordless access to all commands instead of just the intended one (/bin/df).
+
+ Failing to use the full path for a command in the sudoers file (e.g., using ip instead of /usr/sbin/ip) could prevent the rule from working as intended, even if the command runs manually.
+
+ 
+
+**Day 9**
+**Pipelines and Text Processing, and Filters Commands**
 
 -->Filter logs using grep to select only the lines that contain a specific event (like call drops).
 
